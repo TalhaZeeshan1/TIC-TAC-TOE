@@ -29,7 +29,15 @@ function move(cell){
     }
 }
 
-
+function reset(){
+    player1score.innerHTML=0;
+    player2score.innerHTML=0;
+    for(j=0;j<allwinconditions.length;j++){
+               allwinconditions[j][0].innerHTML="";
+               allwinconditions[j][1].innerHTML="";
+               allwinconditions[j][2].innerHTML="";
+           }
+}
 let allwinconditions=[
     [cell1,cell2,cell3],
  [cell4,cell5,cell6],
@@ -63,16 +71,9 @@ function check(player){
     }
     else if(cell1.innerHTML!="" && cell2.innerHTML!="" && cell3.innerHTML!="" && cell4.innerHTML!="" && cell5.innerHTML!="" && cell6.innerHTML!="" && cell7.innerHTML!="" && cell8.innerHTML!="" && cell9.innerHTML!=""){
         alert("It's a draw!");
+        break;
     
 }
-function reset(){
-    player1score.innerHTML=0;
-    player2score.innerHTML=0;
-    for(j=0;j<allwinconditions.length;j++){
-               allwinconditions[j][0].innerHTML="";
-               allwinconditions[j][1].innerHTML="";
-               allwinconditions[j][2].innerHTML="";
-           }
-}
+
     }
 }
