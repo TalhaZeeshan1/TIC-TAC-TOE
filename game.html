@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+   <!DOCTYPE html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+   <div id="points"> 
+        <h3>Player1: <span id="player1-score">0</span></h3>
+        <h3>Player2: <span id="player2-score">0</span></h3>
+    </div>
+    <div id="hero-game"> 
+        <h2 >Player <span id="turn-indicator">1's</span> Turn</h2>
+        <div id="row-1">
+            <div onclick="move(cell1)" id="cell1"></div>
+            <div onclick="move(cell2)" id="cell2"></div>
+            <div onclick="move(cell3)" id="cell3"></div>
+         </div> <div id="row-2">
+            <div onclick="move(cell4)" id="cell4"></div>
+            <div onclick="move(cell5)" id="cell5"></div>
+            <div onclick="move(cell6)" id="cell6"></div>
+         </div> <div id="row-3">
+            <div onclick="move(cell7)" id="cell7"></div>
+            <div onclick="move(cell8)" id="cell8"></div>
+            <div onclick="move(cell9)" id="cell9"></div>
+            
+         </div>
+<button id="reset" onclick="reset()">Reset Game</button>
+</div>
+
+
+
+<script src="script.js"></script>
+</body>
+</html>

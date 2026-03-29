@@ -1,0 +1,66 @@
+body{
+    
+  background: radial-gradient(
+    circle at top,
+    #1a1f2b,
+    #111111 60%
+  );
+
+    margin: 0;
+  overflow-x: hidden; 
+}
+#hero-home {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   
+    height: 100%;
+    color: white;
+    
+    
+}
+#hero-home h1 {
+    font-size: 6rem;
+    margin-bottom: 0;
+    color: #eaeaea;
+    text-shadow: 0 0 10px rgba(77, 171, 247, 0.3);
+    margin-top: 130px;
+}
+    
+
+#hero-home h2 {
+    background-color: #1c1c1c;
+    font-size: 2rem;
+    margin-top: 0%;
+    color: #4dabf7;
+    will-change: transform;
+  white-space: nowrap;
+  position: absolute;
+  animation: scrollText 5s linear infinite;
+   min-width: 200%;
+    
+}
+@keyframes scrollText {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+#hero-home button {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-top: 240px;
+    background-color: #1c1c1c;
+  color: #eaeaea;
+  border: 1px solid #4dabf7;
+}
+
+ #hero-home button:hover {
+  background-color: #4dabf7;
+  color: #111111;
+}
